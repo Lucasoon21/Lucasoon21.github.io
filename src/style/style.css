@@ -37,7 +37,7 @@ a:hover {
     outline: none;
     border: none;
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .content-site {
@@ -103,12 +103,6 @@ a:hover {
 /*=============================== PHOTO ======================== */
 
 .photo-content {
-    /* background: url("https://n.foxdsgn.com/niko/wp-content/uploads/2019/06/gabriel-brandt-X41ESB_jOlo-unsplash-1.jpg"); */
-    /*background: url(/src/image/me_photo.jpg);
-     background-attachment: fixed, scroll;
-    background-repeat: no-repeat, repeat-y;
-    background-position: center center;
-    background-size: cover; */
     height: 110%;
     box-shadow: 0 2px 64px 0 rgb(0 0 0 / 50%);
     margin-right: 10px;
@@ -167,8 +161,6 @@ a:hover {
 
 /*=============================== contact ======================== */
 
-
-/* 
 .contact i {
     color: var(--primary-color);
     font-size: 25px;
@@ -188,7 +180,7 @@ a:hover {
 .contact-group {
     display: flex;
     flex-wrap: wrap;
-} */
+}
 
 
 /*=============================== job ======================== */
