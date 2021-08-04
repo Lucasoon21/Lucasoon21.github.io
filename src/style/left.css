@@ -1,0 +1,76 @@
+/*=============================== LEWA STRONA ======================== */
+
+.content-site-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+/*=============================== MENU ======================== */
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-width: 75px;
+}
+
+.donwload-cv,
+.hamburger-icon,
+.bookmarks button,
+.donwload-cv button {
+    height: 60px;
+    color: var(--primary-color);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookmarks button:hover,
+.donwload-cv button:hover {
+    color: var(--text-color);
+}
+
+.bookmarks li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.hamburger-icon {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+/*=============================== PHOTO ======================== */
+
+.photo-content {
+    height: 110%;
+    box-shadow: 0 2px 64px 0 rgb(0 0 0 / 50%);
+    margin-right: 10px;
+}
+
+.photo {
+    height: 100%;
+    width: 400px;
+}
+
+@media (max-width: 1000px) {
+    .photo {
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .photo {
+        display: none;
+    }
+    .navbar-left {
+        border-right: 1px solid #50505083;
+    }
+}
