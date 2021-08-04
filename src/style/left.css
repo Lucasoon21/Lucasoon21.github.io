@@ -17,12 +17,6 @@
     min-width: 75px;
 }
 
-@media (max-width: 800px) {
-    .navbar-left {
-        border-right: 1px solid #50505083;
-    }
-}
-
 .donwload-cv,
 .hamburger-icon,
 .bookmarks button,
@@ -75,5 +69,8 @@
 @media (max-width: 800px) {
     .photo {
         display: none;
+    }
+    .navbar-left {
+        border-right: 1px solid #50505083;
     }
 }
