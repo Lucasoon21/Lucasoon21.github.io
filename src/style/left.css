@@ -24,15 +24,6 @@
     -o-transition: transform .3s, color .4s linear;
 }
 
-@-webkit-keyframes zoom-bookmark {
-    from {
-        font-size: 30px;
-    }
-    to {
-        font-size: 40px;
-    }
-}
-
 
 /*=============================== MENU ======================== */
 
@@ -45,7 +36,7 @@
 }
 
 .donwload-cv,
-.hamburger-icon,
+.hamburger-icon button,
 .bookmarks button,
 .donwload-cv button {
     height: 60px;
@@ -53,7 +44,7 @@
     font-size: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .bookmarks button:hover,
@@ -63,12 +54,15 @@
 
 .bookmarks li {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 5%;
 }
 
-.hamburger-icon {
+.bookmark {
+    margin: 10px;
+    margin-right: 50px;
+}
+
+.hamburger-icon .btn-menu {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
@@ -89,7 +83,7 @@
 
 @media (max-width: 1000px) {
     .photo {
-        width: 300px;
+        width: 320px;
     }
 }
 
@@ -100,8 +94,108 @@
     .navbar-left {
         border-right: 1px solid #50505083;
     }
+    h1 {
+        font-size: 30px;
+    }
 }
 
 .navbar-left {
     border-right: 1px solid #50505083;
 }
+
+
+/* =========================================================== */
+
+.photo-content {
+    position: absolute;
+    left: 80px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    z-index: 1000;
+}
+
+.click-Menu .photo-content {
+    left: 400px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+
+.bookmark-text {
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.bookmark-text:hover {
+    color: #fff;
+    font-size: 19px;
+}
+
+.navbar-left {
+    min-width: 480px;
+}
+
+@media (max-width:1000px) {
+    .navbar-left {
+        min-width: 0px;
+    }
+    .click-Menu .photo-content {
+        left: 380px;
+    }
+}
+
+@media (max-width:800px) {
+    .navbar-left,
+    .active-bookmark,
+    .btn,
+    .content-site-left {
+        max-width: 90px;
+        min-width: 90px;
+    }
+    .bookmark-text {
+        display: none;
+    }
+    .bookmark {
+        margin: 10px;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-left {
+        position: absolute;
+    }
+}
+
+.bookmarks li a {
+    min-width: 400px;
+}
+
+.bookmark {
+    min-width: 40px;
+    max-width: 40px;
+}
+
+
+/*transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);*/

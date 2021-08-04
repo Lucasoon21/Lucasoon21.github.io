@@ -31,7 +31,9 @@
             <div class="navbar-left">
 
                 <div class="hamburger-icon">
-                    <i class="fas fa-bars bookmark"></i>
+                    <button class="btn-menu btn">
+                        <i class="fas fa-bars bookmark"></i>
+                    </button>
 
                 </div>
 
@@ -39,14 +41,14 @@
                     <li>
                         <a href="#me " class="">
                             <button class="btn-me btn">
-                                <i class="fas fa-user bookmark"></i>
+                                <i class="fas fa-user bookmark"></i> <span class="bookmark-text">O mnie</span>
                             </button>
                         </a>
                     </li>
                     <li>
                         <a href="#skills ">
                             <button class="btn-skills btn">
-                                <i class="fas fa-award bookmark"></i>
+                                <i class="fas fa-award bookmark"></i> <span class="bookmark-text">Umiejętności</span>
                             </button>
                         </a>
                     </li>
@@ -54,7 +56,7 @@
                     <li>
                         <a href="#experience ">
                             <button class="btn-experience btn">
-                                <i class="fas fa-briefcase bookmark"></i>
+                                <i class="fas fa-briefcase bookmark"></i> <span class="bookmark-text">Doświadczenie i edukacja</span>
                             </button>
                         </a>
                     </li>
@@ -62,7 +64,7 @@
                     <li>
                         <a href="#project ">
                             <button class="btn-project btn">
-                                <i class="fas fa-laptop-code bookmark"></i>
+                                <i class="fas fa-laptop-code bookmark"></i> <span class="bookmark-text">Projekty</span>
                             </button>
                         </a>
                     </li>
@@ -70,7 +72,7 @@
 
                 <a class="donwload-cv " href="/src/other/CV_Łukasz_Wolski.pdf">
                     <button class="btn">
-                    <i class="fas fa-download bookmark"></i>
+                    <i class="fas fa-download bookmark"></i> <span class="bookmark-text">Pobierz CV</span>
                 </button>
                 </a>
             </div>
@@ -350,6 +352,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
     <script type="text/javascript ">
+        const btnMenu = document.querySelector(".btn-menu ");
+        const myPhoto = document.querySelector(".content-site ");
+        var clickMenu = false;
+
+        btnMenu.onclick = () => {
+            console.log(clickMenu);
+            if (clickMenu) {
+                myPhoto.classList.add("click-Menu");
+            } else {
+                myPhoto.classList.remove("click-Menu");
+            }
+            clickMenu = !clickMenu;
+
+        }
+
+
         const btnMe = document.querySelector(".btn-me ");
         const btnSkills = document.querySelector(".btn-skills ");
         const btnProject = document.querySelector(".btn-project ");
@@ -373,6 +391,7 @@
             btnSkills.classList.remove("active-bookmark");
             btnProject.classList.remove("active-bookmark");
             btnExperience.classList.remove("active-bookmark");
+            myPhoto.classList.remove("click-Menu");
         }
 
         btnMe.onclick = () => {
