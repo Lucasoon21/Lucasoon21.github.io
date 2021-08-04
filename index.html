@@ -31,7 +31,7 @@
             <div class="navbar-left">
 
                 <div class="hamburger-icon">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars bookmark"></i>
 
                 </div>
 
@@ -39,14 +39,14 @@
                     <li>
                         <a href="#me " class="">
                             <button class="btn-me btn">
-                                <i class="fas fa-user "></i>
+                                <i class="fas fa-user bookmark"></i>
                             </button>
                         </a>
                     </li>
                     <li>
                         <a href="#skills ">
                             <button class="btn-skills btn">
-                                <i class="fas fa-award"></i>
+                                <i class="fas fa-award bookmark"></i>
                             </button>
                         </a>
                     </li>
@@ -54,7 +54,7 @@
                     <li>
                         <a href="#experience ">
                             <button class="btn-experience btn">
-                                <i class="fas fa-briefcase "></i>
+                                <i class="fas fa-briefcase bookmark"></i>
                             </button>
                         </a>
                     </li>
@@ -62,7 +62,7 @@
                     <li>
                         <a href="#project ">
                             <button class="btn-project btn">
-                                <i class="fas fa-laptop-code "></i>
+                                <i class="fas fa-laptop-code bookmark"></i>
                             </button>
                         </a>
                     </li>
@@ -70,7 +70,7 @@
 
                 <a class="donwload-cv " href="/src/other/CV_Łukasz_Wolski.pdf">
                     <button class="btn">
-                    <i class="fas fa-download "></i>
+                    <i class="fas fa-download bookmark"></i>
                 </button>
                 </a>
             </div>
@@ -369,29 +369,37 @@
             contentExperience.classList.add("hidden");
             contentEducation.classList.add("hidden");
 
-
+            btnMe.classList.remove("active-bookmark");
+            btnSkills.classList.remove("active-bookmark");
+            btnProject.classList.remove("active-bookmark");
+            btnExperience.classList.remove("active-bookmark");
         }
 
         btnMe.onclick = () => {
             hiddentContnt()
             contentMe.classList.remove("hidden");
+            btnMe.classList.add("active-bookmark");
         }
         btnSkills.onclick = () => {
             hiddentContnt()
             contentSkills.classList.remove("hidden");
+            btnSkills.classList.add("active-bookmark");
         }
         btnProject.onclick = () => {
             hiddentContnt()
             contentProject.classList.remove("hidden");
+            btnProject.classList.add("active-bookmark");
         }
 
         btnExperience.onclick = () => {
             hiddentContnt()
             contentExperience.classList.remove("hidden");
+            btnExperience.classList.add("active-bookmark");
         }
         btnEducation.onclick = () => {
             hiddentContnt()
             contentEducation.classList.remove("hidden");
+            btnEducation.classList.add("active-bookmark");
         }
     </script>
 </body>

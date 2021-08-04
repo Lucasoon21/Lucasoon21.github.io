@@ -6,6 +6,33 @@
     height: 100%;
 }
 
+.active-bookmark i {
+    color: white;
+    font-size: 40px;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.bookmark {
+    transition: transform .3s, color .4s linear;
+    -webkit-transition: transform .3s, color .4s linear;
+    -moz-transition: transform .3s, color .4s linear;
+    -ms-transition: transform .3s, color .4s linear;
+    -o-transition: transform .3s, color .4s linear;
+}
+
+@-webkit-keyframes zoom-bookmark {
+    from {
+        font-size: 30px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+
 
 /*=============================== MENU ======================== */
 
@@ -73,4 +100,8 @@
     .navbar-left {
         border-right: 1px solid #50505083;
     }
+}
+
+.navbar-left {
+    border-right: 1px solid #50505083;
 }
