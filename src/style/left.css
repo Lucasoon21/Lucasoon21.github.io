@@ -216,3 +216,14 @@
         -o-transition: all 0.8s ease;
     }
 }
+
+@media (max-width:550px) {
+    .click-Menu .hamburger-icon,
+    .click-Menu .bookmarks,
+    .click-Menu .download-cv,
+    .click-Menu .btn,
+    .click-Menu .navbar-left {
+        min-width: 100vw;
+        left: 0;
+    }
+}
