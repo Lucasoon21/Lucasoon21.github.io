@@ -9,6 +9,7 @@
 :root {
     --background-primary-color: #313131;
     --background-secondary-color: #404040;
+    --background-third-color: #353535;
     --primary-color: #9c4eff;
     --text-color: #ffffff;
 }
@@ -74,6 +75,12 @@ a:hover {
     display: flex;
     align-items: center;
     background-color: var(--background-secondary-color);
+}
+
+.btn:active,
+.btn:focus {
+    outline: none!important;
+    border: none!important;
 }
 
 @media (max-width: 1400px) {
