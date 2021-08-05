@@ -215,6 +215,9 @@
         -ms-transition: all 0.8s ease;
         -o-transition: all 0.8s ease;
     }
+    .photo-content {
+        height: 100%;
+    }
 }
 
 @media (max-width:500px) {
