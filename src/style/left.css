@@ -6,6 +6,44 @@
     height: 100%;
 }
 
+.active-bookmark i {
+    color: white;
+    font-size: 40px;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.bookmark {
+    transition: transform .3s, color .4s linear;
+    -webkit-transition: transform .3s, color .4s linear;
+    -moz-transition: transform .3s, color .4s linear;
+    -ms-transition: transform .3s, color .4s linear;
+    -o-transition: transform .3s, color .4s linear;
+    min-width: 40px;
+    max-width: 40px;
+    margin: 10px;
+    margin-right: 50px;
+}
+
+.bookmarks li a {
+    min-width: 400px;
+}
+
+.bookmark-text {
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bookmark-text:hover {
+    color: #fff;
+    font-size: 19px;
+}
+
 
 /*=============================== MENU ======================== */
 
@@ -14,11 +52,17 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    min-width: 75px;
+    transition: all 0.8s ease;
+    border-right: 1px solid #50505083;
+    min-width: 480px;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
 }
 
 .donwload-cv,
-.hamburger-icon,
+.hamburger-icon button,
 .bookmarks button,
 .donwload-cv button {
     height: 60px;
@@ -26,7 +70,7 @@
     font-size: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .bookmarks button:hover,
@@ -36,12 +80,10 @@
 
 .bookmarks li {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 5%;
 }
 
-.hamburger-icon {
+.hamburger-icon .btn-menu {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
@@ -53,6 +95,14 @@
     height: 110%;
     box-shadow: 0 2px 64px 0 rgb(0 0 0 / 50%);
     margin-right: 10px;
+    position: absolute;
+    left: 80px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    z-index: 1000;
 }
 
 .photo {
@@ -60,17 +110,109 @@
     width: 400px;
 }
 
-@media (max-width: 1000px) {
+.click-Menu .photo-content {
+    left: 400px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+
+@media (max-width:1000px) {
     .photo {
-        width: 300px;
+        width: 320px;
+    }
+    .navbar-left {
+        min-width: 0px;
+    }
+    .click-Menu .photo-content {
+        left: 380px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width:800px) {
     .photo {
         display: none;
     }
     .navbar-left {
         border-right: 1px solid #50505083;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .navbar-left,
+    .active-bookmark,
+    .btn,
+    .content-site-left {
+        max-width: 90px;
+        min-width: 90px;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bookmark {
+        margin: 10px;
+    }
+    .bookmark-text {
+        display: none;
+        animation: fade-out 1s;
+        -webkit-animation: fade-out 1s;
+    }
+    .click-Menu .bookmark-text {
+        display: block;
+        animation: fade-in 1s;
+        -webkit-animation: fade-in 1s;
+    }
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    .navbar-left {
+        position: absolute;
+    }
+    .click-Menu .navbar-left {
+        position: fixed;
+        left: 5vw;
+        background-color: var( --background-third-color);
+        min-width: 90vw;
+        z-index: 1000;
+        border: none;
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+    }
+    .click-Menu .hamburger-icon,
+    .click-Menu .bookmarks,
+    .click-Menu .download-cv,
+    .click-Menu .btn {
+        min-width: 90vw;
+    }
+    .navbar-left,
+    .hamburger-icon,
+    .bookmarks,
+    .download-cv,
+    .btn {
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
     }
 }
