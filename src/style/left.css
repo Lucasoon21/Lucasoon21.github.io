@@ -32,6 +32,12 @@
     min-width: 400px;
 }
 
+@media (max-width: 400px) {
+    .bookmarks li a {
+        min-width: 0px;
+    }
+}
+
 .bookmark-text {
     color: #ddd;
     font-size: 18px;
