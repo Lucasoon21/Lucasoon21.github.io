@@ -1,465 +1,415 @@
 <!DOCTYPE html>
 
 <html lang="pl-PL">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Łukasz Wolski - Portfolio</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Łukasz Wolski - Portfolio</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="src/style/style.css" />
+		<link rel="stylesheet" href="src/style/left.css" />
+		<link rel="stylesheet" href="src/style/right.css" />
 
-    <link rel="stylesheet" href="src/style/style.css" />
-    <link rel="stylesheet" href="src/style/left.css" />
-    <link rel="stylesheet" href="src/style/right.css" />
+		<!-- gallery images -->
+		<link rel="stylesheet" type="text/css" href="src/style/lightbox.min.css" />
+		<script type="text/javascript" src="src/js/lightbox-plus-jquery.min.js"></script>
+	</head>
 
-    <!-- gallery images -->
-    <link rel="stylesheet" type="text/css" href="src/style/lightbox.min.css">
-    <script type="text/javascript" src="src/js/lightbox-plus-jquery.min.js"></script>
-</head>
+	<body>
+		<div class="content-site">
+			<div class="content-site-left">
+				<div class="navbar-left">
+					<div class="hamburger-icon">
+						<button class="btn-menu btn">
+							<i class="fas fa-bars bookmark"></i>
+						</button>
+					</div>
 
-<body>
+					<div class="bookmarks">
+						<li>
+							<a href="#me " class="">
+								<button class="btn-me btn active-bookmark"><i class="fas fa-user bookmark"></i> <span class="bookmark-text">O mnie</span></button>
+							</a>
+						</li>
+						<li>
+							<a href="#skills ">
+								<button class="btn-skills btn"><i class="fas fa-award bookmark"></i> <span class="bookmark-text">Umiejętności</span></button>
+							</a>
+						</li>
 
-    <div class="content-site">
-        <div class="content-site-left">
+						<li>
+							<a href="#experience ">
+								<button class="btn-experience btn"><i class="fas fa-briefcase bookmark"></i> <span class="bookmark-text">Doświadczenie i edukacja</span></button>
+							</a>
+						</li>
 
-            <div class="navbar-left">
+						<li>
+							<a href="#project ">
+								<button class="btn-project btn"><i class="fas fa-file-code bookmark"></i> <span class="bookmark-text">Projekty</span></button>
+							</a>
+						</li>
+					</div>
 
-                <div class="hamburger-icon">
-                    <button class="btn-menu btn">
-                        <i class="fas fa-bars bookmark"></i>
-                    </button>
+					<a class="donwload-cv" href="/src/other/Łukasz_Wolski_CV.pdf">
+						<button class="btn"><i class="fas fa-download bookmark"></i> <span class="bookmark-text">Pobierz CV</span></button>
+					</a>
+				</div>
 
-                </div>
+				<div class="photo-content">
+					<img src="src/images/me_photo.jpg " class="photo" />
+				</div>
+			</div>
 
-                <div class="bookmarks">
-                    <li>
-                        <a href="#me " class="">
-                            <button class="btn-me btn active-bookmark">
-                                <i class="fas fa-user bookmark"></i> <span class="bookmark-text">O mnie</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skills ">
-                            <button class="btn-skills btn">
-                                <i class="fas fa-award bookmark"></i> <span class="bookmark-text">Umiejętności</span>
-                            </button>
-                        </a>
-                    </li>
+			<div class="content-site-right">
+				<div class="content-me">
+					<h1>O mnie</h1>
+					<h3>22 lata / Toruń / Student</h3>
+					<p>
+						Jestem studentem IV roku Informatyki na wydziale Matematyki i Informatyki Uniwersytetu Mikołaja Kopernika w Toruniu. Chciałbym rozwijać swoje pasje i zdobyć pierwsze doświadczenie
+						jako programista. Dotychczas zajmowałem się głównie frontendem ale technologie backendowe również nie stanowią dla mnie problemu. Pragnę rozwijać się przy każdej możliwej okazji i
+						uczyć nowych rzeczy. Aktualnie głównie skupiam się na takich technologiach jak React.js, Javascript czy C#
+					</p>
+					<p>
+						Moje zainteresowania to przede wszystkim sport (głównie piłka nożna) oraz nowinki czy ciekawostki ze świata nauki czy nowych technologii. Oprócz tego interesuję się także historią
+						oraz grami komputerowymi
+					</p>
+					<h1>Kontakt</h1>
+					<div class="contact-group">
+						<div class="contact"><i class="fas fa-phone"></i>577-741-727</div>
+						<div class="contact">
+							<i class="fab fa-linkedin"></i>
+							<a href="https://www.linkedin.com/in/%C5%82ukasz-wolski-9963b71b8/">Łukasz Wolski</a>
+						</div>
+						<div class="contact"><i class="fas fa-map-marked-alt"></i> Toruń </div>
+						<div class="contact">
+							<i class="fab fa-github-square"></i>
+							<a href="https://github.com/Lucasoon21">Lucasoon21</a>
+						</div>
+						<div class="contact"><i class="fas fa-at"></i>wolski.lukasz.21@gmail.com</div>
 
-                    <li>
-                        <a href="#experience ">
-                            <button class="btn-experience btn">
-                                <i class="fas fa-briefcase bookmark"></i> <span class="bookmark-text">Doświadczenie i edukacja</span>
-                            </button>
-                        </a>
-                    </li>
+						<div class="contact">
+							<i class="fab fa-facebook-square"></i>
+							<a href="https://www.facebook.com/Lucasoon21/">Łukasz Wolski</a>
+						</div>
+					</div>
+				</div>
 
-                    <li>
-                        <a href="#project ">
-                            <button class="btn-project btn">
-                                <i class="fas fa-file-code bookmark"></i> <span class="bookmark-text">Projekty</span>
-                            </button>
-                        </a>
-                    </li>
-                </div>
+				<div class="content-skills hidden">
+					<h1>Umiejętności</h1>
+					<div class="list-skills">
+						<p class="skill">HTML</p>
+						<p class="skill">CSS/SCSS</p>
+						<p class="skill">React.js</p>
+						<p class="skill">Javascript</p>
+						<p class="skill">Typescript</p>
+						<p class="skill">C#/ASP.Net</p>
+						<p class="skill">C++</p>
+						<p class="skill">Java</p>
+						<p class="skill">Kotlin</p>
+						<p class="skill">React Native</p>
+						<p class="skill">Swift</p>
+						<p class="skill">Git</p>
+						<p class="skill">MySql</p>
+						<p class="skill">PostgreSQL</p>
+						<p class="skill">Oracle Database</p>
+					</div>
+					<h1>Kwalifikacje</h1>
+					<div class="list-qualifications">
+						<div class="qualification">
+							<p class="date">08.2018</p>
+							<p class="name-qualification">Kwalifikacja E14 Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami</p>
+						</div>
+						<div class="qualification">
+							<p class="date">08.2017</p>
+							<p class="name-qualification">Kwalifikacja E13 Projektowanie lokalnych sieci komputerowych i administrowanie sieciami</p>
+						</div>
 
-                <a class="donwload-cv " href="/src/other/Wolski_Łukasz_CV.pdf">
-                    <button class="btn">
-                    <i class="fas fa-download bookmark"></i> <span class="bookmark-text">Pobierz CV</span>
-                </button>
-                </a>
-            </div>
+						<div class="qualification">
+							<p class="date">08.2016</p>
+							<p class="name-qualification">Kwalifikacja E12 Montaż i eksploatacja komputerów osobistych oraz urządzeń peryferyjnych</p>
+						</div>
+					</div>
+				</div>
 
-            <div class="photo-content ">
-                <img src="src/images/me_photo.jpg " class="photo " />
-            </div>
+				<div class="content-education hidden">
+					<h1>Edukacja</h1>
 
-        </div>
+					<div class="school">
+						<p class="school-date">10.2018 – obecnie</p>
+						<div class="school-info">
+							<p class="school-name">Uniwersytet Mikołaja Kopernika w Toruniu</p>
+							<p class="school-specialization">Kierunek: informatyka</p>
+							<p class="school-level">Poziom wykształcenia: inżynier</p>
+						</div>
+					</div>
 
-        <div class="content-site-right ">
-            <div class="content-me">
+					<div class="school">
+						<p class="school-date">09.2014 – 04.2018</p>
+						<div class="school-info">
+							<p class="school-name">Zespół Szkół Technicznych w Żninie</p>
+							<p class="school-specialization">Specjalizacja: Technik Informatyk</p>
+							<p class="school-level">Poziom wykształcenia: średnie</p>
+						</div>
+					</div>
+				</div>
 
-                <h1>O mnie</h1>
-                <h3>22 lata / Toruń / Student</h3>
-                <p>
-                    Jestem studentem IV roku Informatyki na wydziale Matematyki i Informatyki Uniwersytetu Mikołaja Kopernika w Toruniu. Chciałbym rozwijać swoje pasje i zdobyć pierwsze doświadczenie jako programista. Dotychczas zajmowałem się głównie frontendem ale technologie
-                    backendowe również nie stanowią dla mnie problemu. Pragnę rozwijać się przy każdej możliwej okazji i uczyć nowych rzeczy. Aktualnie głównie skupiam się na takich technologiach jak React.js, Javascript czy C#
-                </p>
-                <p>
-                    Moje zainteresowania to przede wszystkim sport (głównie piłka nożna) oraz nowinki czy ciekawostki ze świata nauki czy nowych technologii. Oprócz tego interesuję się także historią oraz grami komputerowymi
-                </p>
-                <h1>Kontakt</h1>
-                <div class="contact-group">
+				<div class="content-experience hidden">
+					<h1>Edukacja</h1>
 
-                    <div class="contact">
-                        <i class="fas fa-phone"></i>577-741-727
-                    </div>
-                    <div class="contact">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/%C5%82ukasz-wolski-9963b71b8/">Łukasz Wolski</a>
-                    </div>
-                    <div class="contact">
-                        <i class="fas fa-map-marked-alt"></i> Toruń / Złotowo, <br />88-190 Barcin
-                    </div>
-                    <div class="contact">
-                        <i class="fab fa-github-square"></i>
-                        <a href="https://github.com/Lucasoon21">Lucasoon21</a>
+					<div class="school">
+						<p class="school-date">10.2018 – obecnie</p>
+						<div class="school-info">
+							<p class="school-name">Uniwersytet Mikołaja Kopernika w Toruniu</p>
+							<p class="school-specialization">Kierunek: informatyka</p>
+							<p class="school-level">Poziom wykształcenia: inżynier</p>
+						</div>
+					</div>
 
-                    </div>
-                    <div class="contact">
-                        <i class="fas fa-at"></i>wolski.lukasz.21@gmail.com
-                    </div>
+					<div class="school">
+						<p class="school-date">09.2014 – 04.2018</p>
+						<div class="school-info">
+							<p class="school-name">Zespół Szkół Technicznych w Żninie</p>
+							<p class="school-specialization">Specjalizacja: Technik Informatyk</p>
+							<p class="school-level">Poziom wykształcenia: średnie</p>
+						</div>
+					</div>
 
+					<h1>Doświadczenie</h1>
+					<div class="job">
+						<p class="job-date">11.2021 – obecnie</p>
+						<div class="job-info">
+							<p class="job-position">Programista Fullstack</p>
+							<p class="job-employer">CeNTe Sp. z o.o | Toruń</p>
+							<p class="job-responsibilities">
+								<b>Obowiązki</b><br />
+								- Projektowanie interfejsu graficznego użytkownika <br />
+								- Programowanie aplikacji webowych (React.js, Javascript, SCSS, Node.js, MySQL)
+							</p>
+						</div>
+					</div>
 
-                    <div class="contact">
-                        <i class="fab fa-facebook-square"></i>
-                        <a href="https://www.facebook.com/Lucasoon21/">Łukasz Wolski</a>
-                    </div>
-                </div>
+					<div class="job">
+						<p class="job-date">07.2017 – 07.2017</p>
+						<div class="job-info">
+							<p class="job-position">Praktykant Informatyk</p>
+							<p class="job-employer">F.H.U. "COMAX" Ryszard Tęcza | Barcin</p>
+							<p class="job-responsibilities">
+								<b>Obowiązki</b><br />
+								- Diagnostyka i naprawa sprzętu komputerowego <br />
+								- Montaż zestawów komputerowych
+							</p>
+						</div>
+					</div>
 
+					<div class="job">
+						<p class="job-date">12.2016 – 12.2016</p>
+						<div class="job-info">
+							<p class="job-position">Praktykant</p>
+							<p class="job-employer">Drukarnia Żądza Czynów Bartosz Woźniak | Barcin</p>
+							<p class="job-responsibilities">
+								<b>Obowiązki</b><br />
+								- Laminowanie, grawerowanie oraz obsługa profesjonalnych drukarek, laserów, ploterów i innych urządzeń poligraficznych <br />- projektowanie prostych reklam, grafik w programie
+								corel draw <br />- prace introligatorskie
+							</p>
+						</div>
+					</div>
+				</div>
 
-            </div>
+				<div class="content-project hidden">
+					<h1>Projekty</h1>
+					<hr />
+					<div class="project">
+						<div class="project-images">
+							<a href="src/images/MotoStage/MotoStage_2.PNG" data-lightbox="motostageGallery" data-title="Posty dla danego pojazdu">
+								<img class="project-image" src="src/images/MotoStage/MotoStage_2_small.PNG" />
+							</a>
+							<a href="src/images/MotoStage/MotoStage_4.PNG" data-lightbox="motostageGallery" data-title="Zakładka odkrywania nowych garaży">
+								<img class="project-image" src="src/images/MotoStage/MotoStage_4_small.PNG" />
+							</a>
+							<a href="src/images/MotoStage/MotoStage_1.PNG" data-lightbox="motostageGallery" data-title="Pojazdy w garażu użytkownika"> </a>
+							<a href="src/images/MotoStage/MotoStage_3.PNG" data-lightbox="motostageGallery" data-title="Posty obserwowanych garaży"> </a>
+							<a href="src/images/MotoStage/MotoStage_5.PNG" data-lightbox="motostageGallery" data-title="Ekran logowania i rejestracji"> </a>
+						</div>
 
-
-            <div class="content-skills hidden">
-                <h1>Umiejętności</h1>
-                <div class="list-skills">
-                    <p class="skill">
-                        HTML
-                    </p>
-                    <p class="skill">
-                        CSS/SCSS
-                    </p>
-                    <p class="skill">
-                        React.js
-                    </p>
-                    <p class="skill">
-                        Javascript
-                    </p>
-                    <p class="skill">
-                        Typescript
-                    </p>
-                    <p class="skill">
-                        C#/ASP.Net
-                    </p>
-                    <p class="skill">
-                        C++
-                    </p>
-                    <p class="skill">
-                        Java
-                    </p>
-                    <p class="skill">
-                        Kotlin
-                    </p>
-                    <p class="skill">
-                        React Native
-                    </p>
-                    <p class="skill">
-                        Swift
-                    </p>
-                    <p class="skill">
-                        Git
-                    </p>
-                    <p class="skill">
-                        MySql
-                    </p>
-                    <p class="skill">
-                        PostgreSQL
-                    </p>
-                    <p class="skill">
-                        Oracle Database
-                    </p>
-                </div>
-                <h1>Kwalifikacje</h1>
-                <div class="list-qualifications">
-
-                    <div class="qualification">
-                        <p class="date">08.2018</p>
-                        <p class="name-qualification">Kwalifikacja E14 Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami</p>
-                    </div>
-                    <div class="qualification">
-                        <p class="date">08.2017</p>
-                        <p class="name-qualification"> Kwalifikacja E13 Projektowanie lokalnych sieci komputerowych i administrowanie sieciami</p>
-                    </div>
-
-                    <div class="qualification">
-                        <p class="date">08.2016</p>
-                        <p class="name-qualification">Kwalifikacja E12 Montaż i eksploatacja komputerów osobistych oraz urządzeń peryferyjnych</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="content-education hidden">
-                <h1>Edukacja</h1>
-
-                <div class="school">
-                    <p class="school-date">10.2018 – obecnie</p>
-                    <div class="school-info">
-                        <p class="school-name">Uniwersytet Mikołaja Kopernika w Toruniu</p>
-                        <p class="school-specialization">Kierunek: informatyka </p>
-                        <p class="school-level">Poziom wykształcenia: inżynier</p>
-                    </div>
-                </div>
-
-                <div class="school">
-                    <p class="school-date">09.2014 – 04.2018</p>
-                    <div class="school-info">
-                        <p class="school-name">Zespół Szkół Technicznych w Żninie</p>
-                        <p class="school-specialization">Specjalizacja: Technik Informatyk</p>
-                        <p class="school-level">Poziom wykształcenia: średnie</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="content-experience hidden">
-                <h1>Edukacja</h1>
-
-                <div class="school">
-                    <p class="school-date">10.2018 – obecnie</p>
-                    <div class="school-info">
-                        <p class="school-name">Uniwersytet Mikołaja Kopernika w Toruniu</p>
-                        <p class="school-specialization">Kierunek: informatyka </p>
-                        <p class="school-level">Poziom wykształcenia: inżynier</p>
-                    </div>
-                </div>
-
-                <div class="school">
-                    <p class="school-date">09.2014 – 04.2018</p>
-                    <div class="school-info">
-                        <p class="school-name">Zespół Szkół Technicznych w Żninie</p>
-                        <p class="school-specialization">Specjalizacja: Technik Informatyk</p>
-                        <p class="school-level">Poziom wykształcenia: średnie</p>
-                    </div>
-                </div>
-
-
-
-
-                <h1>Doświadczenie</h1>
-                <div class="job">
-                    <p class="job-date">07.2017 – 07.2017</p>
-                    <div class="job-info">
-                        <p class="job-position">Praktykant Informatyk</p>
-                        <p class="job-employer">F.H.U. "COMAX" Ryszard Tęcza | Barcin</p>
-                        <p class="job-responsibilities"><b>Obowiązki</b><br /> - Diagnostyka i naprawa sprzętu komputerowego <br /> - Montaż zestawów komputerowych</p>
-                    </div>
-                </div>
-                <div class="job">
-                    <p class="job-date">12.2016 – 12.2016</p>
-                    <div class="job-info">
-                        <p class="job-position">Praktykant</p>
-                        <p class="job-employer">Drukarnia Żądza Czynów Bartosz Woźniak | Barcin</p>
-                        <p class="job-responsibilities"><b>Obowiązki</b><br /> - Laminowanie, grawerowanie oraz obsługa profesjonalnych drukarek, laserów, ploterów i innych urządzeń poligraficznych
-                            <br />- projektowanie prostych reklam, grafik w programie corel draw
-                            <br />- prace introligatorskie </p>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-            <div class="content-project hidden">
-                <h1>Projekty</h1>
-                <hr />
-                <div class="project">
-                    <div class="project-images">
-                        <a href="src/images/MotoStage/MotoStage_2.PNG" data-lightbox="motostageGallery" data-title="Posty dla danego pojazdu">
-                            <img class="project-image" src="src/images/MotoStage/MotoStage_2_small.PNG" />
-                        </a>
-                        <a href="src/images/MotoStage/MotoStage_4.PNG" data-lightbox="motostageGallery" data-title="Zakładka odkrywania nowych garaży">
-                            <img class="project-image" src="src/images/MotoStage/MotoStage_4_small.PNG" />
-                        </a>
-                        <a href="src/images/MotoStage/MotoStage_1.PNG" data-lightbox="motostageGallery" data-title="Pojazdy w garażu użytkownika">
-                        </a>
-                        <a href="src/images/MotoStage/MotoStage_3.PNG" data-lightbox="motostageGallery" data-title="Posty obserwowanych garaży">
-                        </a>
-                        <a href="src/images/MotoStage/MotoStage_5.PNG" data-lightbox="motostageGallery" data-title="Ekran logowania i rejestracji">
-                        </a>
-                    </div>
-
-                    <div class="project-info">
-                        <h2>MotoStage</h2>
-                        <p>
-                            Projekt został wykonany w ramach przedmiotu "Programowanie zespołowe". Jest to serwis społecznościowy który zrzesza fanów motoryzacji. Oferuje m.in chat czy dodawanie i przeglądanie postów oraz garaży.
-                        </p>
-                        <h4>Technologie</h4>
-                        <div class="project-technology">
-                            <p class="project-tech">C#</p>
-                            <p class="project-tech">React.js</p>
-                            <p class="project-tech">Git</p>
-                            <p class="project-tech">PostgreSQL</p>
-                            <p class="project-tech">HTML</p>
-                            <p class="project-tech">SCSS</p>
-                            <p class="project-tech">Typescript</p>
-                        </div>
-                        <!-- <h4>Linki</h4>
+						<div class="project-info">
+							<h2>MotoStage</h2>
+							<p>
+								Projekt został wykonany w ramach przedmiotu "Programowanie zespołowe". Jest to serwis społecznościowy który zrzesza fanów motoryzacji. Oferuje m.in chat czy dodawanie i
+								przeglądanie postów oraz garaży.
+							</p>
+							<h4>Technologie</h4>
+							<div class="project-technology">
+								<p class="project-tech">C#</p>
+								<p class="project-tech">React.js</p>
+								<p class="project-tech">Git</p>
+								<p class="project-tech">PostgreSQL</p>
+								<p class="project-tech">HTML</p>
+								<p class="project-tech">SCSS</p>
+								<p class="project-tech">Typescript</p>
+							</div>
+							<!-- <h4>Linki</h4>
                         <div class="project-links">
                             <a href="https://github.com/kamilecko/MotoFront" class="link">Frontend</a>
                             <a href="https://github.com/kamilecko/MotoStageBackend" class="link">Backend</a>
 
                         </div> -->
-                    </div>
+						</div>
+					</div>
+					<hr />
+					<div class="project">
+						<div class="project-images">
+							<a href="src/images/MotoStage-TeamPage/motostage-TeamPage_1.PNG" data-lightbox="motostagePageGallery" data-title="Strona powitalna">
+								<img class="project-image" src="src/images/MotoStage-TeamPage/MotoStage-teamPage-small_1.PNG" />
+							</a>
+							<a href="src/images/MotoStage-TeamPage/motostage-TeamPage_3.PNG" data-lightbox="motostagePageGallery" data-title="Harmonogram prac zesołu">
+								<img class="project-image" src="src/images/MotoStage-TeamPage/MotoStage-teamPage-small_3.PNG" />
+							</a>
+							<a href="src/images/MotoStage-TeamPage/motostage-TeamPage_5.PNG" data-lightbox="motostagePageGallery" data-title="Skład zesołu"> </a>
+							<a href="src/images/MotoStage-TeamPage/motostage-TeamPage_4.PNG" data-lightbox="motostagePageGallery" data-title="Lista Spotkań zesołu"> </a>
+						</div>
 
-                </div>
-                <hr />
-                <div class="project">
-                    <div class="project-images">
-                        <a href="src/images/MotoStage-TeamPage/motostage-TeamPage_1.PNG" data-lightbox="motostagePageGallery" data-title="Strona powitalna">
-                            <img class="project-image" src="src/images/MotoStage-TeamPage/MotoStage-teamPage-small_1.PNG" />
-                        </a>
-                        <a href="src/images/MotoStage-TeamPage/motostage-TeamPage_3.PNG" data-lightbox="motostagePageGallery" data-title="Harmonogram prac zesołu">
-                            <img class="project-image" src="src/images/MotoStage-TeamPage/MotoStage-teamPage-small_3.PNG" />
-                        </a>
-                        <a href="src/images/MotoStage-TeamPage/motostage-TeamPage_5.PNG" data-lightbox="motostagePageGallery" data-title="Skład zesołu">
-                        </a>
-                        <a href="src/images/MotoStage-TeamPage/motostage-TeamPage_4.PNG" data-lightbox="motostagePageGallery" data-title="Lista Spotkań zesołu">
-                        </a>
-                    </div>
+						<div class="project-info" style="padding-right: 20px">
+							<h2>MotoStage - strona zespołu</h2>
+							<p>
+								Strona została stworzona na potrzeby przedmiotu "Programowanie zespołowe". Strona miała za zadania przedstawić m.in członków zespołu, harmonogram czy terminy spotkań zespołu.
+							</p>
+							<h4>Technologie</h4>
+							<div class="project-technology">
+								<p class="project-tech">Git</p>
+								<p class="project-tech">HTML</p>
+								<p class="project-tech">CSS</p>
+								<p class="project-tech">Javascript</p>
+							</div>
+							<h4>Linki</h4>
+							<div class="project-links">
+								<a href="https://github.com/Lucasoon21/MotoStage-TeamPage" class="link">Github</a>
+								<a href="https://aleks-2.mat.umk.pl/archive/pz2020/zesp09/www/" class="link">Live</a>
+							</div>
+						</div>
+					</div>
+					<hr />
 
-                    <div class="project-info" style="padding-right: 20px;">
-                        <h2>MotoStage - strona zespołu</h2>
-                        <p>Strona została stworzona na potrzeby przedmiotu "Programowanie zespołowe". Strona miała za zadania przedstawić m.in członków zespołu, harmonogram czy terminy spotkań zespołu.</p>
-                        <h4>Technologie</h4>
-                        <div class="project-technology">
-                            <p class="project-tech">Git</p>
-                            <p class="project-tech">HTML</p>
-                            <p class="project-tech">CSS</p>
-                            <p class="project-tech">Javascript</p>
-                        </div>
-                        <h4>Linki</h4>
-                        <div class="project-links">
-                            <a href="https://github.com/Lucasoon21/MotoStage-TeamPage" class="link">Github</a>
-                            <a href="https://aleks-2.mat.umk.pl/pz2020/zesp09/index.html" class="link">Live</a>
-                        </div>
-                    </div>
-                </div>
-                <hr />
+					<div class="project">
+						<div class="project-images">
+							<a
+								href="src/images/CalorieApp/CalorieApp2.png"
+								data-lightbox="CalorieAppGallery"
+								data-title="Menu aplikacji oraz widget przedstawiający ilość spożytych makroskładników dzisiejszego dnia"
+							>
+								<img class="project-image project-image_calorieApp" src="src/images/CalorieApp/CalorieApp2_small.png" />
+							</a>
+							<a href="src/images/CalorieApp/CalorieApp3.png" data-lightbox="CalorieAppGallery" data-title="Lista dodanych produktów oraz dodawanie ich">
+								<img class="project-image project-image_calorieApp" src="src/images/CalorieApp/CalorieApp3_small.png" />
+							</a>
+							<a href="src/images/CalorieApp/CalorieApp1.png" data-lightbox="CalorieAppGallery" data-title="Przeglądanie i dodawanie produktu dla danego dnia"> </a>
+						</div>
 
+						<div class="project-info" style="padding-right: 20px">
+							<h2>Calorie App</h2>
+							<p>
+								Projekt wykonany w ramach zaliczenia przedmiotu "Programowanie aplikacji mobilnych na urządzenia Apple". Aplikacja mobilna pozwala na dodawania produktów, przypisywanie im
+								danej ilości makrosładników, dodawanie tych produktów dla danego dnia oraz obliczeniu ilości spożytych makroskładników dla danego dnia.
+							</p>
+							<h4>Technologie</h4>
+							<div class="project-technology">
+								<p class="project-tech">Swift</p>
+							</div>
+							<h4>Linki</h4>
+							<div class="project-links">
+								<a href="https://github.com/Lucasoon21/CalorieCountingApp" class="link">Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                <div class="project">
-                    <div class="project-images">
-                        <a href="src/images/CalorieApp/CalorieApp2.png" data-lightbox="CalorieAppGallery" data-title="Menu aplikacji oraz widget przedstawiający ilość spożytych makroskładników dzisiejszego dnia">
-                            <img class="project-image project-image_calorieApp" src="src/images/CalorieApp/CalorieApp2_small.png" />
-                        </a>
-                        <a href="src/images/CalorieApp/CalorieApp3.png" data-lightbox="CalorieAppGallery" data-title="Lista dodanych produktów oraz dodawanie ich">
-                            <img class="project-image project-image_calorieApp" src="src/images/CalorieApp/CalorieApp3_small.png" />
-                        </a>
-                        <a href="src/images/CalorieApp/CalorieApp1.png" data-lightbox="CalorieAppGallery" data-title="Przeglądanie i dodawanie produktu dla danego dnia">
-                        </a>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js "
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 "
+			crossorigin="anonymous "
+		></script>
+		<script type="text/javascript ">
+			const btnMenu = document.querySelector(".btn-menu ");
+			const myPhoto = document.querySelector(".content-site ");
+			var clickMenu = false;
 
-                    </div>
+			btnMenu.onclick = () => {
+			    console.log(clickMenu);
+			    if (clickMenu) {
+			        myPhoto.classList.add("click-Menu");
+			    } else {
+			        myPhoto.classList.remove("click-Menu");
+			    }
+			    clickMenu = !clickMenu;
 
-                    <div class="project-info" style="padding-right: 20px;">
-                        <h2>Calorie App</h2>
-                        <p>Projekt wykonany w ramach zaliczenia przedmiotu "Programowanie aplikacji mobilnych na urządzenia Apple". Aplikacja mobilna pozwala na dodawania produktów, przypisywanie im danej ilości makrosładników, dodawanie tych produktów dla
-                            danego dnia oraz obliczeniu ilości spożytych makroskładników dla danego dnia.
-                        </p>
-                        <h4>Technologie</h4>
-                        <div class="project-technology">
-                            <p class="project-tech">Swift</p>
-                        </div>
-                        <h4>Linki</h4>
-                        <div class="project-links">
-                            <a href="https://github.com/Lucasoon21/CalorieCountingApp" class="link">Github</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
-    <script type="text/javascript ">
-        const btnMenu = document.querySelector(".btn-menu ");
-        const myPhoto = document.querySelector(".content-site ");
-        var clickMenu = false;
-
-        btnMenu.onclick = () => {
-            console.log(clickMenu);
-            if (clickMenu) {
-                myPhoto.classList.add("click-Menu");
-            } else {
-                myPhoto.classList.remove("click-Menu");
-            }
-            clickMenu = !clickMenu;
-
-        }
+			}
 
 
-        const btnMe = document.querySelector(".btn-me ");
-        const btnSkills = document.querySelector(".btn-skills ");
-        const btnProject = document.querySelector(".btn-project ");
-        const btnExperience = document.querySelector(".btn-experience");
-        const btnEducation = document.querySelector(".btn-education");
+			const btnMe = document.querySelector(".btn-me ");
+			const btnSkills = document.querySelector(".btn-skills ");
+			const btnProject = document.querySelector(".btn-project ");
+			const btnExperience = document.querySelector(".btn-experience");
+			const btnEducation = document.querySelector(".btn-education");
 
-        const contentEducation = document.querySelector(".content-education ")
-        const contentExperience = document.querySelector(".content-experience ")
-        const contentMe = document.querySelector(".content-me ")
-        const contentSkills = document.querySelector(".content-skills ")
-        const contentProject = document.querySelector(".content-project ")
+			const contentEducation = document.querySelector(".content-education ")
+			const contentExperience = document.querySelector(".content-experience ")
+			const contentMe = document.querySelector(".content-me ")
+			const contentSkills = document.querySelector(".content-skills ")
+			const contentProject = document.querySelector(".content-project ")
 
-        function hiddentContnt() {
-            contentMe.classList.add("hidden");
-            contentSkills.classList.add("hidden");
-            contentProject.classList.add("hidden");
-            contentExperience.classList.add("hidden");
-            contentEducation.classList.add("hidden");
+			function hiddentContnt() {
+			    contentMe.classList.add("hidden");
+			    contentSkills.classList.add("hidden");
+			    contentProject.classList.add("hidden");
+			    contentExperience.classList.add("hidden");
+			    contentEducation.classList.add("hidden");
 
-            btnMe.classList.remove("active-bookmark");
-            btnSkills.classList.remove("active-bookmark");
-            btnProject.classList.remove("active-bookmark");
-            btnExperience.classList.remove("active-bookmark");
-            myPhoto.classList.remove("click-Menu");
-        }
+			    btnMe.classList.remove("active-bookmark");
+			    btnSkills.classList.remove("active-bookmark");
+			    btnProject.classList.remove("active-bookmark");
+			    btnExperience.classList.remove("active-bookmark");
+			    myPhoto.classList.remove("click-Menu");
+			}
 
-        btnMe.onclick = () => {
-            hiddentContnt()
-            contentMe.classList.remove("hidden");
-            btnMe.classList.add("active-bookmark");
-        }
-        btnSkills.onclick = () => {
-            hiddentContnt()
-            contentSkills.classList.remove("hidden");
-            btnSkills.classList.add("active-bookmark");
-        }
-        btnProject.onclick = () => {
-            hiddentContnt()
-            contentProject.classList.remove("hidden");
-            btnProject.classList.add("active-bookmark");
-        }
+			btnMe.onclick = () => {
+			    hiddentContnt()
+			    contentMe.classList.remove("hidden");
+			    btnMe.classList.add("active-bookmark");
+			}
+			btnSkills.onclick = () => {
+			    hiddentContnt()
+			    contentSkills.classList.remove("hidden");
+			    btnSkills.classList.add("active-bookmark");
+			}
+			btnProject.onclick = () => {
+			    hiddentContnt()
+			    contentProject.classList.remove("hidden");
+			    btnProject.classList.add("active-bookmark");
+			}
 
-        btnExperience.onclick = () => {
-            hiddentContnt()
-            contentExperience.classList.remove("hidden");
-            btnExperience.classList.add("active-bookmark");
-        }
-        btnEducation.onclick = () => {
-            hiddentContnt()
-            contentEducation.classList.remove("hidden");
-            btnEducation.classList.add("active-bookmark");
-        }
-    </script>
-</body>
-
+			btnExperience.onclick = () => {
+			    hiddentContnt()
+			    contentExperience.classList.remove("hidden");
+			    btnExperience.classList.add("active-bookmark");
+			}
+			btnEducation.onclick = () => {
+			    hiddentContnt()
+			    contentEducation.classList.remove("hidden");
+			    btnEducation.classList.add("active-bookmark");
+			}
+		</script>
+	</body>
 </html>
