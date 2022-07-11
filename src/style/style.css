@@ -112,3 +112,8 @@ a:hover {
         height: 100%;
     }
 }
+
+* .counterimg {
+    display: none;
+    visibility: hidden;
+}
